@@ -12,7 +12,7 @@ pip install anndi
 ## Usage
 
 Use `anndi.provides` for marking functions that provides some dependencies,
-and use `anndi.injector` context manager for resolving dependencies:
+and use `anndi.Injector` for resolving dependencies:
 
 
 ```python
