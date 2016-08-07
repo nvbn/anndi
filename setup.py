@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-setup(name='thefuck',
+setup(name='anndi',
       version='0.1',
       description="Magnificent app which corrects your previous console command",
       author='Vladimir Iakovlev',
