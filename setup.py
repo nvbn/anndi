@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(name='anndi',
-      version='0.1',
+      version='0.2',
       description="Experimental dependency injection that uses annotations.",
       author='Vladimir Iakovlev',
       author_email='nvbn.rm@gmail.com',

@@ -1,5 +1,5 @@
 import abc
-from anndi import injector, provides
+from anndi import Injector, provides
 
 
 class AbstractKeyValueStore(metaclass=abc.ABCMeta):
@@ -37,5 +37,4 @@ def app(store: AbstractKeyValueStore):
 
 
 def test():
-    with injector() as resolver:
-        assert resolver.run(app)
+    assert Injector().run(app)

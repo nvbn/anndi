@@ -16,7 +16,7 @@ and use `anndi.injector` context manager for resolving dependencies:
 
 
 ```python
-from anndi import provides, injector
+from anndi import provides, Injector
 
 
 @provides
@@ -38,8 +38,7 @@ def init_app(*, settings: Settings, db: Connection, cache: CacheManager):
     ...
     
     
-with injector() as resolver:
-    resolver.run(init_app)
+Injector().run(init_app)
 
 ```
 

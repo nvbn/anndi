@@ -1,4 +1,3 @@
-from contextlib import contextmanager
 from weakref import WeakValueDictionary
 
 _provides = WeakValueDictionary()
@@ -32,11 +31,6 @@ class Injector:
         """Resolve dependencies and run function."""
         kwargs = self._get_dependencies(fn)
         return fn(**kwargs)
-
-
-@contextmanager
-def injector():
-    yield Injector()
 
 
 def provides(fn):
