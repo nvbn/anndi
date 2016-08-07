@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(name='anndi',
       version='0.1',
-      description="Magnificent app which corrects your previous console command",
+      description="Experimental dependency injection that uses annotations.",
       author='Vladimir Iakovlev',
       author_email='nvbn.rm@gmail.com',
       url='https://github.com/nvbn/anndi',
